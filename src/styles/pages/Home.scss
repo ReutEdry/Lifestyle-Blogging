@@ -1,0 +1,82 @@
+@import '../variabels.module.scss';
+
+.home {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 164px);
+
+
+    &-container {
+        flex: 1;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 30px;
+
+
+        p {
+            // align-self: center;
+            width: 25%;
+            text-align: left;
+            font-size: 1.4rem;
+
+            span:first-child {
+                font-weight: 700;
+                font-size: 1.7rem;
+
+            }
+
+            .end-p {
+                font-weight: 500;
+                font-size: 1.5rem;
+            }
+
+            >* {
+                color: $strongerclr2;
+            }
+        }
+
+        .pic-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+            gap: 5px;
+            // background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(223, 186, 155, 0.2));
+            // padding-top: 10px;
+
+
+            .pic {
+                width: 330px;
+                // height: 600px;
+                height: auto;
+            }
+
+            h2 {
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: $strongerclr5;
+                text-align: center;
+            }
+
+            button {
+                background-color: $lightclr4;
+                padding: 10px;
+                font-weight: 400;
+                font-size: 1rem;
+                border-color: $lightclr3;
+                border-radius: 8px;
+            }
+
+        }
+    }
+
+    &.visible {
+        .pic-container {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

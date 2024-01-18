@@ -1,0 +1,49 @@
+@import '../variabels.module.scss';
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 10px;
+    padding-inline: 40px;
+
+    .logo {
+        &-link {
+            margin-block-start: 10px;
+        }
+
+        &-image {
+            width: 350px;
+            height: 150px;
+        }
+    }
+
+
+    h1 {
+        a {
+            font-size: 2.5rem;
+            color: $strongerclr5;
+        }
+    }
+
+    section {
+        display: flex;
+        gap: 20px;
+        font-size: 1.4rem;
+
+        a {
+            padding: 7px;
+            color: $lightclr5;
+            font-weight: 500;
+
+            &.active {
+                border-radius: 8px;
+                background-color: $strongerclr3;
+                color: white;
+            }
+        }
+    }
+
+    // background-color: red;
+}

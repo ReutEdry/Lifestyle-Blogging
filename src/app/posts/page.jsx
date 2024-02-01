@@ -1,6 +1,12 @@
-const Posts = () => {
+import { getPosts } from "@/services/posts.service"
+
+const Posts = async () => {
+
+    const posts = await getPosts()
+    console.log(posts);
     return (
-        <div>Posts</div>
+        <div>posts</div>
+        // <div>{posts}</div>
     )
 }
 

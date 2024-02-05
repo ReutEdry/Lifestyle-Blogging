@@ -1,6 +1,5 @@
 'use client'
 
-import '@/styles/pages/Home.scss'
 import Footer from "@/cmps/Footer"
 import Image from "next/image"
 import travelImg from '../../public/images/solotravel.jpg'
@@ -10,11 +9,12 @@ import { useEffect, useState } from 'react'
 
 
 const Home = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    setIsVisible(true);
-  }, []);
+    setIsVisible(true)
+  }, [])
+
   return (
     <div className={`home ${isVisible ? 'visible' : ''}`}>
       <section className="home-container">

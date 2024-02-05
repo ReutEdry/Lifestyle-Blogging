@@ -1,0 +1,16 @@
+// Setup
+@import "setup/variabels";
+@import "setup/functions";
+
+// Basics
+@import "basics/base";
+@import "basics/helpers";
+
+// Pages 
+@import "pages/Home.scss";
+
+// Components 
+@import "cmps/AppHeader.scss";
+@import "cmps/Footer.scss";
+
+// MQ

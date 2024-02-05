@@ -1,5 +1,5 @@
 import { Quicksand } from 'next/font/google'
-import '@/styles/globals.scss'
+import '@/assets/styles/main.scss'
 import AppHeader from '@/cmps/AppHeader'
 
 const quicksand = Quicksand({ subsets: ['latin'], weight: ['400', '500', '700'] })

@@ -1,6 +1,5 @@
 'use client'
 import Link from "next/link"
-import '@/styles/cmps/AppHeader.scss'
 import { usePathname } from "next/navigation"
 import Image from "next/image"
 import logoImg from '../../public/images/logo.png'

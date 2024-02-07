@@ -1,49 +1,38 @@
-// @import '../variabels.module.scss';
-
 footer {
-    padding: 0px 30px 10px;
+    padding: 0px rem(30px) rem(10px);
     background-color: $lightclr5;
-    position: relative;
-
+    background: linear-gradient(45deg, #d9b99b, #e2c9b1, #ebd9c8, #f4e9de, #fdf9f4);
+    // position: relative;
 
     .footer {
         &-top {
-            display: flex;
             justify-content: center;
 
             .lifetyle-container {
 
                 .lifestyle-img {
-                    position: absolute;
                     width: auto;
                     height: 200px;
-                    border-radius: 10px;
+                    position: absolute;
                     left: 20px;
                     bottom: 55px;
+                    border-radius: rem(10px);
                 }
             }
 
-
             .logo-container {
                 .logo-image {
-                    height: 157px;
+                    height: 100px;
                     width: auto;
-                }
-
-                p {
-                    text-align: center;
-                    font-size: 1.2rem;
-                    margin-block-end: 2px;
                 }
             }
 
             .contact {
-                display: flex;
                 align-items: center;
-                gap: 10px;
+                gap: rem(10px);
 
                 a:first-child div {
-                    margin-inline-start: 20px;
+                    margin-inline-start: rem(20px);
                 }
 
                 div {
@@ -51,24 +40,22 @@ footer {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: 55px;
-                    height: 55px;
+                    width: 45px;
+                    height: 45px;
                     border-radius: 50%;
                     background-color: $lightclr4;
 
-
                     .img {
-                        width: 45px;
-                        height: 45px;
+                        width: 35px;
+                        height: 35px;
                         border-radius: 50%;
-
                     }
                 }
             }
         }
 
         &-bottom {
-            padding-block-start: 5px;
+            padding-block-start: rem(5px);
             border-top: 1px solid black;
             text-align: center;
         }

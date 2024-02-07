@@ -1,17 +1,10 @@
-// @import '../variabels.module.scss';
-
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // padding: 10px;
-    padding-inline: 40px;
+    padding-inline: rem(40px);
 
     .logo {
-        &-link {
-            margin-block-start: 10px;
-        }
 
         &-image {
             width: 350px;
@@ -19,31 +12,21 @@ nav {
         }
     }
 
-
-    h1 {
-        a {
-            font-size: 2.5rem;
-            color: $strongerclr5;
-        }
-    }
-
     section {
         display: flex;
-        gap: 20px;
-        font-size: 1.4rem;
+        gap: rem(20px);
+        font-size: rem(25px);
 
         a {
-            padding: 7px;
+            padding: rem(7px);
             color: $lightclr5;
             font-weight: 500;
 
             &.active {
-                border-radius: 8px;
+                border-radius: rem(8px);
                 background-color: $strongerclr3;
                 color: white;
             }
         }
     }
-
-    // background-color: red;
 }

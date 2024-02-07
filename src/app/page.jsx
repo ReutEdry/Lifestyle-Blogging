@@ -16,8 +16,8 @@ const Home = () => {
   }, [])
 
   return (
-    <div className={`home ${isVisible ? 'visible' : ''}`}>
-      <section className="home-container">
+    <div className={`home ${isVisible ? 'visible' : ''} flex`}>
+      <section className="home-container flex">
         <p>
           <span> Welcome to Reut's Lifestyle Blog</span> <br />
           Discover, share, and explore the wonderful world of lifestyle and tips!

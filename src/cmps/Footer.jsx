@@ -8,14 +8,14 @@ import linkdinImg from '../../public/images/linkdin.png'
 export default function Footer() {
     return (
         <footer>
-            <section className="footer-top">
-                <div className="lifetyle-container">
+            <section className="footer-top flex">
+                {/* <div className="lifetyle-container">
                     <Image src={lifestyleImg} alt="lifestyle" className="lifestyle-img" />
-                </div>
+                </div> */}
                 <div className="logo-container">
                     <Image src={logoImg} className="logo-image " alt="logo" />
                 </div>
-                <div className="contact">
+                <div className="contact flex">
                     <a href="https://www.facebook.com/reut.edry.10" target="_blank" rel="noopener noreferrer">
                         <div><Image src={facebookImg} alt="facebook" className="img" /> </div>
                     </a>
@@ -31,5 +31,3 @@ export default function Footer() {
         </footer>
     )
 }
-
-

@@ -1,6 +1,6 @@
 import { Quicksand } from 'next/font/google'
 import '@/assets/styles/main.scss'
-import AppHeader from '@/cmps/AppHeader'
+import { AppHeader } from '@/cmps/AppHeader'
 
 const quicksand = Quicksand({ subsets: ['latin'], weight: ['400', '500', '700'] })
 
@@ -13,8 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={quicksand.className}>
-        <AppHeader />
-        {children}
+        <div className='wrapper'>
+          <AppHeader />
+          {children}
+        </div>
       </body>
     </html>
   )

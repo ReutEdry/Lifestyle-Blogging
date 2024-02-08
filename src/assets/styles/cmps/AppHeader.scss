@@ -29,4 +29,89 @@ nav {
             }
         }
     }
+
+    .mobile-nav {
+        display: none;
+
+        .burger {
+            position: relative;
+            width: 40px;
+            height: 30px;
+            background: transparent;
+            cursor: pointer;
+            display: block;
+
+            input {
+                display: none;
+
+                &:checked~span:nth-of-type(1) {
+                    top: 0;
+                    left: 5px;
+                    transform: rotate(405deg);
+                }
+
+                &:checked~span:nth-of-type(2) {
+                    width: 0%;
+                    opacity: 0;
+                }
+
+                &:checked~span:nth-of-type(3) {
+                    top: 28px;
+                    left: 5px;
+                    transform: rotate(-405deg);
+                }
+            }
+
+            span {
+                display: block;
+                position: absolute;
+                height: 4px;
+                width: 100%;
+                background: #e2af7e;
+                border-radius: 9px;
+                opacity: 1;
+                left: 0;
+                transform: rotate(0deg);
+                transition: .25s ease-in-out;
+
+                &:nth-of-type(3) {
+                    top: 100%;
+                    transform-origin: left center;
+                    transform: translateY(-50%);
+                }
+
+                &:nth-of-type(1) {
+                    top: 0px;
+                    transform-origin: left center;
+                }
+
+                &:nth-of-type(2) {
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transform-origin: left center;
+                }
+            }
+        }
+    }
+
+    .open-mobile-nav {
+        position: absolute;
+        top: 87px;
+        right: 0;
+        height: calc(100vh - 87px);
+        width: 35%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: rem(50px);
+        padding: rem(10px);
+        z-index: 999;
+        background-color: $lightclr1;
+        transition: right 3.5s ease;
+
+        a {
+            font-size: rem(20px);
+            font-weight: bold;
+        }
+    }
 }
